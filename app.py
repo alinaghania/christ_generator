@@ -272,7 +272,7 @@ def main():
                     
                     if img:
                         # Display image with optimal sizing
-                        st.image(img, use_column_width=True, caption=f"Generated at {datetime.now().strftime('%H:%M:%S')}")
+                        st.image(img, use_container_width=True, caption=f"Generated at {datetime.now().strftime('%H:%M:%S')}")
                         
                         # Compact info display
                         col_info1, col_info2 = st.columns(2)
