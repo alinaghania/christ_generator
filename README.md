@@ -38,25 +38,6 @@ Usage : Compléter/modifier des parties d'image
 Exemple : "Remplace le fond par Christian"
 
 
-(venv) (base) alina.ghani@AMALQH0F43CY3 FINETUNE-FLUX % curl --request GET \
-  --url 'https://api.us1.bfl.ai/v1/get_result?id=17547232-bbdf-409b-91c9-a8a510286857' \
-  --header 'X-Key: ea0de23e-18a1-4a64-9673-f73c860c15bd'
-{"id":"17547232-bbdf-409b-91c9-a8a510286857","status":"Ready","result":{"finetune_id":"17547232-bbdf-409b-91c9-a8a510286857"},"progress":null,"details":null}%                 
-
-
-````
-curl --request POST \
-  --url 'https://api.us1.bfl.ai/v1/flux-pro-1.1-ultra-finetuned' \
-  --header 'Content-Type: application/json' \
-  --header 'X-Key: ea0de23e-18a1-4a64-9673-f73c860c15bd' \
-  --data '{
-    "prompt": "christian, professional portrait, natural lighting, confident expression",
-    "finetune_id": "17547232-bbdf-409b-91c9-a8a510286857",
-    "finetune_strength": 1.2,
-    "width": 1024,
-    "height": 1024,
-    "raw": true
-  }'
 
 
 ````
